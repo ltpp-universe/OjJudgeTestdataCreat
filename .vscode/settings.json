@@ -1,0 +1,14 @@
+{
+  "C_Cpp_Runner.msvcBatchPath": "",
+  "files.associations": {
+    "*.embeddedhtml": "html",
+    "fstream": "cpp",
+    "iostream": "cpp",
+    "filesystem": "cpp",
+    "chrono": "cpp",
+    "ostream": "cpp",
+    "iosfwd": "cpp",
+    "new": "cpp"
+  },
+  "C_Cpp.errorSquiggles": "disabled"
+}
