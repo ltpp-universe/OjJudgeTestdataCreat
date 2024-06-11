@@ -1,3 +1,5 @@
+// 编译器最低需要支持C++17标准
+// g++ .\main.cpp -std=c++20
 #include <bits/stdc++.h>
 #pragma GCC optimize(2)
 #pragma GCC optimize(3)
@@ -76,7 +78,7 @@ public:
     /**
      * @brief 构造函数
      */
-    Judge()
+    JudgeTestdata()
     {
         srand((unsigned)time(nullptr));
         this->test_num = 10;
@@ -86,7 +88,7 @@ public:
      * @brief 构造函数
      * @param test_num 样例组数目
      */
-    Judge(int test_num)
+    JudgeTestdata(int test_num)
     {
         srand((unsigned)time(nullptr));
         this->test_num = test_num;
@@ -99,7 +101,7 @@ public:
     {
         string save_dir = "./testdata/";
         this->createDirectory(save_dir);
-        F(fs_i, 0, this->test_num, ++fs_i)
+        F(fs_i, 0, this->test_num, 1)
         {
             ofstream file_in(save_dir + to_string(fs_i) + ".in");
             if (!file_in.is_open())
